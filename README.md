@@ -7,7 +7,7 @@ This project contains two demos client showing integration between Lightstreamer
 <table>
   <tr>
     <td style="text-align: left">
-      &nbsp;<a href="http://demos.lightstreamer.com/demo/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/" target="_blank"><img src="http://www.lightstreamer.com/img/demo/screen_gibasic.png"></a>&nbsp;
+      &nbsp;<a href="http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/" target="_blank"><img src="http://www.lightstreamer.com/img/demo/screen_gibasic.png"></a>&nbsp;
     </td>
     <td>
       &nbsp;An online demonstration is hosted on our servers at:<br>
@@ -29,7 +29,7 @@ The demo includes the following client-side technologies:
 <table>
   <tr>
     <td style="text-align: left">
-      &nbsp;<a href="http://demos.lightstreamer.com/demo/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/" target="_blank"><img src="http://www.lightstreamer.com/img/demo/screen_giadvanced.png"></a>&nbsp;
+      &nbsp;<a href="http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/" target="_blank"><img src="http://www.lightstreamer.com/img/demo/screen_giadvanced.png"></a>&nbsp;
     </td>
     <td>
       &nbsp;An online demonstration is hosted on our servers at:<br>

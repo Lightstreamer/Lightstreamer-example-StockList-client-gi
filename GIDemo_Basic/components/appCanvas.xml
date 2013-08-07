@@ -1,0 +1,132 @@
+<serialization xmlns="urn:tibco.com/v3.0" jsxversion="3.2">
+  <name>Layout ( | )</name>
+  <icon/>
+  <description>2 side-by-side panes in an adaptive layout grid.</description>
+  <onBeforeDeserialize/>
+  <onAfterDeserialize/>
+  <object type="jsx3.gui.LayoutGrid">
+    <variants jsxrepeat="3" jsxsizearray="['44','805']" jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2" jsxbestguess="1" jsxorientation="1"/>
+    <strings jsxname="layout ( | )" jsxwidth="100%" jsxheight="100%"/>
+    <object type="jsx3.gui.Block">
+      <variants jsxoverflow="2"/>
+      <strings jsxname="pane" jsxwidth="100%" jsxheight="100%"/>
+      <dynamics jsxborder="@No jsxborder"/>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants jsxwidth="800" jsxoverflow="1"/>
+      <strings jsxname="pane" jsxheight="100%"/>
+      <dynamics jsxborder="@No jsxborder"/>
+      <object type="jsx3.gui.LayoutGrid">
+        <variants jsxrepeat="6" jsxsizearray="['80','60','110','60','150','40']" jsxleft="0" jsxtop="0" jsxoverflow="2" jsxbestguess="0" jsxorientation="0"/>
+        <strings jsxname="layout (--)" jsxwidth="790" jsxheight="100%"/>
+        <object type="jsx3.gui.Block">
+          <variants jsxheight="80" jsxoverflow="2"/>
+          <strings jsxname="pane" jsxwidth="100%" jsxtext="&lt;table width=&quot;795&quot;&gt; &lt;tr&gt; &lt;td&gt; &lt;a href=&quot;http://www.lightstreamer.com&quot; target=&quot;_BLANK&quot;&gt;    &lt;img src=&quot;images/logo.png&quot; alt=&quot;LIGHTSTREAMER&quot; hspace=&quot;0&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; &lt;a href=&quot;http://www.tibco.com&quot; target=&quot;_BLANK&quot;&gt;    &lt;img src=&quot;images/logo_234_18.gif&quot; alt=&quot;TIBCO GENERAL INTERFACE&quot; hspace=&quot;0&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;"/>
+          <dynamics jsxborder="@No jsxborder" jsxfontsize="@Label1 FS" jsxpadding="@8Pixel"/>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxheight="60" jsxoverflow="2" jsxfontsize="11"/>
+          <strings jsxname="pane" jsxwidth="100%" jsxtext="&lt;BR&gt; &lt;P&gt;&lt;B&gt;Lightstreamer Table&lt;/B&gt;&lt;BR&gt; Demonstrates embedding in a GI front-end a table managed by Lightstreamer and fed with real-time data.&lt;/P&gt;"/>
+          <dynamics jsxborder="@No jsxborder"/>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxheight="110" jsxoverflow="2"/>
+          <strings jsxname="pane" jsxwidth="100%"/>
+          <dynamics jsxborder="@No jsxborder"/>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="1"/>
+            <strings jsxheight="100%" jsxname="block" jsxwidth="100%" jsxtext="&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;2&quot; width=&quot;790&quot; border=&quot;0&quot; &gt;  &lt;tr class=&quot;tabletitle&quot;&gt;   &lt;td width=&quot;148&quot; style=&quot;text-align: left&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Name&lt;/td&gt;   &lt;td width=&quot;42&quot;&gt;Last&lt;/td&gt;   &lt;td width=&quot;64&quot; style=&quot;text-align: center&quot;&gt;Time&lt;/td&gt;   &lt;td width=&quot;24&quot; style=&quot;text-align: center&quot;&gt;+/-&lt;/td&gt;   &lt;td width=&quot;61&quot;&gt;Change(%)&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Bid Size&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Bid&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Ask&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Ask Size&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Min&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Max&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Ref.&lt;/td&gt;   &lt;td width=&quot;50&quot;&gt;Open&lt;/td&gt;  &lt;/tr&gt;   &lt;tr class=&quot;lscoldA&quot;&gt;   &lt;td nowrap style=&quot;text-align: left&quot;&gt;    &lt;a href=&quot;#&quot; onClick=&quot;sfn.launchDetailDialog(1)&quot;&gt;     &lt;div class=&quot;stocknameA&quot; data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;12&quot;&gt;Loading...&lt;/div&gt;    &lt;/a&gt;   &lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;1&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;2&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;  &lt;div&gt;    &lt;img data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-update=&quot;src&quot; data-field=&quot;13&quot; src=&quot;images/spacer_4px.gif&quot; width=&quot;20&quot; height=&quot;8&quot; border=&quot;0&quot;/&gt;   &lt;/div&gt;&lt;/td&gt;   &lt;td nowrap&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;3&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;4&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;5&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;6&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;7&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;8&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;9&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;10&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;1&quot; data-field=&quot;11&quot;&gt;-&lt;/div&gt;&lt;/td&gt;  &lt;/tr&gt;   &lt;tr class=&quot;lscoldB&quot;&gt;   &lt;td nowrap style=&quot;text-align: left&quot;&gt;    &lt;a href=&quot;#&quot; onClick=&quot;sfn.launchDetailDialog(2)&quot;&gt;     &lt;div class=&quot;stocknameB&quot; data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;12&quot;&gt;Loading...&lt;/div&gt;    &lt;/a&gt;   &lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;1&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;2&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;img data-update=&quot;src&quot; src=&quot;&quot; data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;13&quot; width=&quot;20&quot; height=&quot;8&quot; border=&quot;0&quot;&gt;&lt;/img&gt;&lt;/td&gt;   &lt;td nowrap&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;3&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;4&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;5&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;6&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;7&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;8&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;9&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;10&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;2&quot; data-field=&quot;11&quot;&gt;-&lt;/div&gt;&lt;/td&gt;  &lt;/tr&gt;   &lt;tr class=&quot;lscoldA&quot;&gt;   &lt;td nowrap style=&quot;text-align: left&quot;&gt;    &lt;a href=&quot;#&quot; onClick=&quot;sfn.launchDetailDialog(3)&quot;&gt;     &lt;div class=&quot;stocknameA&quot; data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;12&quot;&gt;Loading...&lt;/div&gt;    &lt;/a&gt;   &lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;1&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;2&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;  &lt;div&gt;    &lt;img data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-update=&quot;src&quot; data-field=&quot;13&quot; src=&quot;images/spacer_4px.gif&quot; width=&quot;20&quot; height=&quot;8&quot; border=&quot;0&quot;/&gt;   &lt;/div&gt;&lt;/td&gt;   &lt;td nowrap&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;3&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;4&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;5&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;6&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;7&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;8&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;9&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;10&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;3&quot; data-field=&quot;11&quot;&gt;-&lt;/div&gt;&lt;/td&gt;  &lt;/tr&gt;   &lt;tr class=&quot;lscoldB&quot;&gt;   &lt;td nowrap style=&quot;text-align: left&quot;&gt;    &lt;a href=&quot;#&quot; onClick=&quot;sfn.launchDetailDialog(4)&quot;&gt;     &lt;div class=&quot;stocknameB&quot; data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;12&quot;&gt;Loading...&lt;/div&gt;    &lt;/a&gt;   &lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;1&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;2&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;  &lt;div&gt;    &lt;img data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-update=&quot;src&quot; data-field=&quot;13&quot; src=&quot;images/spacer_4px.gif&quot; width=&quot;20&quot; height=&quot;8&quot; border=&quot;0&quot;/&gt;   &lt;/div&gt;&lt;/td&gt;  &lt;td nowrap&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;3&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;4&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;5&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;6&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;7&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;8&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;9&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;10&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;4&quot; data-field=&quot;11&quot;&gt;-&lt;/div&gt;&lt;/td&gt;  &lt;/tr&gt;   &lt;tr class=&quot;lscoldA&quot;&gt;   &lt;td nowrap style=&quot;text-align: left&quot;&gt;    &lt;a href=&quot;#&quot; onClick=&quot;sfn.launchDetailDialog(5)&quot;&gt;     &lt;div class=&quot;stocknameA&quot; data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;12&quot;&gt;Loading...&lt;/div&gt;    &lt;/a&gt;   &lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;1&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;2&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;  &lt;div&gt;    &lt;img data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-update=&quot;src&quot; data-field=&quot;13&quot; src=&quot;images/spacer_4px.gif&quot; width=&quot;20&quot; height=&quot;8&quot; border=&quot;0&quot;/&gt;   &lt;/div&gt;&lt;/td&gt;   &lt;td nowrap&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;3&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;4&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;5&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;6&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;7&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;8&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;9&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;10&quot;&gt;-&lt;/div&gt;&lt;/td&gt;   &lt;td&gt;&lt;div data-source=&quot;lightstreamer&quot; data-grid=&quot;1&quot; data-item=&quot;5&quot; data-field=&quot;11&quot;&gt;-&lt;/div&gt;&lt;/td&gt;  &lt;/tr&gt;  &lt;/table&gt;"/>
+          </object>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxheight="60" jsxoverflow="2" jsxfontsize="11"/>
+          <strings jsxname="pane" jsxwidth="100%" jsxtext="&lt;BR&gt; &lt;P&gt;&lt;B&gt;GI Table&lt;/B&gt;&lt;BR&gt;Demonstrates feeding a GI table with real-time data supplied by Lightstreamer Server.&lt;/P&gt;"/>
+          <dynamics jsxborder="@No jsxborder"/>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxwidth="795" jsxheight="150" jsxoverflow="2"/>
+          <strings jsxname="pane"/>
+          <dynamics jsxborder="@No jsxborder"/>
+          <object type="jsx3.gui.Matrix">
+            <variants jsxpagingmodel="0" jsxselectionmodel="1" jsxscalewidth="0" jsxheaderheight="28" jsxfixedcolumnindex="1" jsxsuppresshscroll="1" jsxsuppressvscroll="1"/>
+            <strings jsxname="list" jsxbodyborder="1px solid #dfdfef" jsxheaderborder="1px solid #dfdfef" jsxfocusstyle="font-weight:bold;" jsxsortpath="stock_name"/>
+            <dynamics jsxbgcolor="@Solid Medium"/>
+            <events jsxexecute="sfn.launchDetail(this, strRECORDID)"/>
+            <xslparameters jsx_rowbg1="#ffffff" jsx_rowbg2="#efefff"/>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="NAME" jsxwidth="134" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextNAME" jsxtext="Name" jsxtextalign="left" jsxcellfontweight="normal" jsxfontweight="normal" jsxformathandler="" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/span&gt;&lt;/xsl:template&gt;"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="LAST" jsxwidth="64" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextLAST" jsxtext="Last&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="TIME" jsxwidth="67" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextTIME" jsxtext="Time&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="text" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="ARROW" jsxwidth="33" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextSIGNCHNG" jsxtext="+/-&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt; &lt;xsl:choose&gt;           &lt;xsl:when test=&quot;{0}=&amp;quot;down&amp;quot;&quot;&gt;   &lt;img src=&quot;images/quotes_down.gif&quot;/&gt;  &lt;/xsl:when&gt;      &lt;xsl:otherwise&gt;            &lt;img src=&quot;images/quotes_up.gif&quot;/&gt;  &lt;/xsl:otherwise&gt;   &lt;/xsl:choose&gt; &lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="CHNG" jsxwidth="65" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextCHNG" jsxtext="Change(%)&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:choose&gt;&lt;xsl:when test=&quot;{0}&amp;lt;0&quot;&gt;&lt;span style=&quot;color:red;font-weight:bold;&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/span&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;span style=&quot;color:green;font-weight:bold;&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/span&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:template&gt;" jsxsortpath="jsxtextVALCHNG" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="BIDSIZE" jsxwidth="68" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextBIDSIZE" jsxtext="Bid Size&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="BID" jsxwidth="49" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextBID" jsxtext="Bid&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="ASK" jsxwidth="47" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextASK" jsxtext="Ask&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="ASKSIZE" jsxwidth="67" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextASKSIZE" jsxtext="Ask Size&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="MIN" jsxwidth="50" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextMIN" jsxtext="Min&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="MAX" jsxwidth="50" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextMAX" jsxtext="Max&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="REF" jsxwidth="50" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextREF" jsxtext="Ref&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+            <object type="jsx3.gui.Matrix.Column">
+              <variants/>
+              <strings jsxname="OPEN" jsxwidth="50" jsxpadding="6 2 2 2" jsxcellpadding="4 1 4 1" jsxpath="jsxtextOPEN" jsxtext="Open&amp;nbsp;&amp;nbsp;&amp;nbsp;" jsxdatatype="number" jsxtextalign="right" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/xsl:template&gt;" jsxcelltextalign="right"/>
+              <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+            </object>
+          </object>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxheight="40" jsxoverflow="2" jsxfontsize="11"/>
+          <strings jsxname="pane" jsxwidth="100%" jsxtext="&lt;BR&gt;&lt;p class=&quot;note&quot; style=&quot;text-align: left; color: #000022&quot;&gt;      Simulated market data.&lt;/P&gt;"/>
+          <dynamics jsxborder="@No jsxborder"/>
+        </object>
+      </object>
+    </object>
+    
+  </object>
+</serialization>

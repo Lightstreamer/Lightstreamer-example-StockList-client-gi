@@ -1,0 +1,11 @@
+<serialization xmlns="urn:tibco.com/v3.0" jsxversion="3.2">
+  <name>undefined</name>
+  <icon>undefined</icon>
+  <description>undefined</description>
+  <onBeforeDeserialize>undefined</onBeforeDeserialize>
+  <onAfterDeserialize>undefined</onAfterDeserialize>
+  <object type="jsx3.gui.Matrix.Column">
+    <strings jsxname="mc2" jsxtext="will change" jsxpadding="6 2 2 2" jsxtextalign="right" jsxcelltextalign="right" jsxwidth="*" jsxcellpadding="4 1 4 1" jsxpath="C5"/>
+    <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled" />
+  </object>
+</serialization>

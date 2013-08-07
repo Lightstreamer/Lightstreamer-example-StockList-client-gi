@@ -1,0 +1,40 @@
+<serialization xmlns="urn:tibco.com/v3.0" jsxversion="3.2">
+  <name>Dialog</name>
+  <icon/>
+  <description>Dialog box.  (Set Modal property for a modal dialog).</description>
+  <onBeforeDeserialize/>
+  <onAfterDeserialize/>
+  <object type="jsx3.gui.Dialog">
+    <variants jsxzindex="5000" jsxwindowstate="1" jsxtop="39"/>
+    <strings jsxname="detail_xxx" jsxwidth="280" jsxheight="270" jsxleft="92"/>
+    <dynamics jsxbgcolor="@Dialog BG"/>
+    <events jsxdestroy="LS_onCloseDialog(this.jsxname)"/>
+    <object type="jsx3.gui.WindowBar">
+      <variants/>
+      <strings jsxname="caption bar" jsxtext="Stock"/>
+      <object type="jsx3.gui.ToolbarButton">
+        <variants/>
+        <strings jsxname="min button"/>
+        <dynamics jsximage="@Min Icon" jsxtip="@Min Tip"/>
+        <events jsxexecute="this.getParent().getParent().doToggleState();"/>
+      </object>
+      <object type="jsx3.gui.ToolbarButton">
+        <variants/>
+        <strings jsxname="max button" jsximage="JSX/images/dialog/max.gif"/>
+        <dynamics jsxtip="@Max Tip"/>
+        <events jsxexecute="this.getAncestorOfType(&quot;jsx3.gui.Dialog&quot;).doMaximize(this);"/>
+      </object>
+      <object type="jsx3.gui.ToolbarButton">
+        <variants/>
+        <strings jsxname="close button"/>
+        <dynamics jsximage="@Close Icon" jsxtip="@Close Tip"/>
+        <events jsxexecute="this.getParent().getParent().doClose();"/>
+      </object>
+    </object>
+    <object type="jsx3.gui.Block">
+      <variants/>
+      <strings jsxname="block" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1" jsxtext="&lt;div data-source=&quot;lightstreamer&quot; table=&quot;chart_xxx&quot; id=&quot;chart_xxx&quot; &gt;&lt;/div&gt;" jsxbgcolor="#FFFFFF"/>
+      <dynamics jsxpadding="@8Pixel"/>
+    </object>
+  </object>
+</serialization>

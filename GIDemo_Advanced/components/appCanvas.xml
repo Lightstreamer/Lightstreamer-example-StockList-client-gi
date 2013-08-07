@@ -1,0 +1,185 @@
+<serialization xmlns="urn:tibco.com/v3.0" jsxversion="3.2">
+  <name/>
+  <icon/>
+  <description/>
+  <onBeforeDeserialize/>
+  <onAfterDeserialize/>
+  <object type="jsx3.gui.Block">
+    <variants jsxrelativeposition="1"/>
+    <strings jsxinstanceof="jsx3.app.Model" jsxname="root" jsxwidth="100%" jsxheight="100%"/>
+    <object type="jsx3.gui.LayoutGrid">
+      <variants jsxsizearray="['30','*','30','40']" jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2" jsxbestguess="1" jsxorientation="0"/>
+      <strings jsxname="mainLayout" jsxwidth="100%" jsxheight="100%"/>
+      <dynamics jsxbgcolor="@Solid Disabled"/>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="2" jsxfontsize="18"/>
+        <strings jsxname="block" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1" jsxpadding="4" jsxcolor="#ffffff" jsxfontweight="bold" jsxtext="Subscribe"/>
+        <dynamics jsxbgcolor="@Solid Shadow"/>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="2"/>
+        <strings jsxname="pane" jsxwidth="100%" jsxheight="100%" jsxpadding="8"/>
+        <object type="jsx3.gui.LayoutGrid">
+          <variants jsxsizearray="['190','*','266']" jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2" jsxorientation="1"/>
+          <strings jsxname="layout ( | )" jsxwidth="100%" jsxheight="100%"/>
+          <dynamics jsxbgcolor="@Solid Medium"/>
+          <object type="jsx3.gui.Block">
+            <variants/>
+            <strings jsxname="block" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1" jsxpadding="8 0 8 8"/>
+            <object type="jsx3.gui.Block">
+              <variants jsxoverflow="2"/>
+              <strings jsxname="block" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1"/>
+              <dynamics jsxborder="@Inset"/>
+              <object type="jsx3.gui.Matrix">
+                <variants jsxoverflow="1" jsxmultiselect="0" jsxsort="1"/>
+                <strings jsxname="stocks" jsxrenderingmodel="hierarchical" jsxpagingmodel="4" jsxdrag="1" jsxdrop="1" jsxselectionmodel="2" jsxxmlurl="xml/stock_pages.xml" jsxsortpath="jsxtext" jsxsorttype="text" jsxsortdirection="ascending"/>
+                <dynamics jsxbgcolor="@Solid Light"/>
+                <events jsxdrop="com.tibco.giclient.dropInTree(strRECORDID);" jsxexecute="com.tibco.giclient.treeDblClick(this,strRECORDID);"/>
+                <object type="jsx3.gui.Matrix.Column">
+                  <variants/>
+                  <strings jsxname="c_stocks" jsxwidth="*" jsxcellpadding="2" jsxpath="jsxtext"/>
+                  <dynamics jsxborder="@Outset" jsxbg="@Bevel TopDown" jsxbgcolor="@Solid Disabled"/>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="2"/>
+            <strings jsxname="pane" jsxwidth="100%" jsxheight="100%" jsxpadding="8"/>
+            <object type="jsx3.gui.Block">
+              <variants jsxoverflow="2"/>
+              <strings jsxname="block" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1"/>
+              <dynamics jsxbgcolor="@Solid Light" jsxborder="@Inset"/>
+              <object type="jsx3.gui.Matrix">
+                <variants jsxpagingmodel="0" jsxselectionmodel="1" jsxscalewidth="1" jsxheaderheight="28" jsxfixedcolumnindex="2" jsxdrag="1" jsxdrop="1"/>
+                <strings jsxname="matrix1" jsxbodyborder="1px solid #dfdfef" jsxheaderborder="1px solid #dfdfef" jsxfocusstyle="font-weight:bold;" jsxselectionbg="" jsxspystyle="" jsxsortpath="stock_name"/>
+                <dynamics jsxbgcolor="@Solid Medium"/>
+                <events jsxaftersort="" jsxafterreorder="com.tibco.giclient.reorderColumns(intOLDINDEX,intNEWINDEX);" jsxdrop="com.tibco.giclient.dropInMatrix(this,objSOURCE,strDRAGIDS);" jsxadopt="com.tibco.giclient.dragFromMatrix(this,objTARGET,strRECORDID);" jsxexecute=""/>
+                <xslparameters jsx_rowbg1="#ffffff" jsx_rowbg2="#efefff"/>
+                <object type="jsx3.gui.Matrix.Column">
+                  <variants/>
+                  <strings jsxname="removeColumn" jsxwidth="20" jsxtext="" jsxpadding="6 2 2 2" jsxcellpadding="1" jsxvaluetemplate="@empty" jsxpath="" jsxfontweight="normal" jsxtextalign="left"/>
+                  <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+                  <object type="jsx3.gui.ImageButton">
+                    <variants jsxenabled="1" jsxprefetch="1" jsxtype="0" jsxstate="0" jsxwidth="16" jsxheight="16" />
+                    <strings jsxname="imageButtonMask" jsximage="jsx:///images/list/delete.gif"/>
+                    <events jsxexecute="com.tibco.giclient.matrixDelClick(this);"/>
+                  </object>
+                </object>
+                <object type="jsx3.gui.Matrix.Column">
+                  <variants/>
+                  <strings jsxname="0" jsxtext="Name" jsxpadding="6 2 2 2" jsxwidth="*" jsxcellpadding="4 1 4 1" jsxpath="stock_name" jsxtextalign="left" jsxcellfontweight="normal" jsxfontweight="normal" jsxformathandler="" jsxvaluetemplate="&lt;xsl:template xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;&lt;xsl:value-of select=&quot;{0}&quot;/&gt;&lt;/span&gt;&lt;/xsl:template&gt;"/>
+                  <dynamics jsxborder="@Outset" jsxbgcolor="@Solid Disabled"/>
+                </object>
+              </object>
+            </object>
+            <object type="jsx3.gui.Block">
+              <variants jsxrelativeposition="0" jsxoverflow="3" jsxleft="12" jsxtop="40" jsxfontsize="14" jsxzindex="0"/>
+              <strings jsxname="loadingLabel" jsxtext=" Loading... " jsxdisplay="" jsxbgcolor="#9898a5" jsxcolor="white" jsxvisibility="hidden" jsxfontweight="bold"/>
+            </object>
+          </object>
+          <object type="jsx3.gui.Block">
+            <variants jsxoverflow="2"/>
+            <strings jsxname="pane" jsxwidth="100%" jsxheight="100%" jsxpadding="8"/>
+            <object type="jsx3.gui.LayoutGrid">
+              <variants jsxsizearray="['50','60','40','40','40']" jsxrelativeposition="0" jsxleft="0" jsxtop="0" jsxoverflow="2" jsxbestguess="1" jsxorientation="0"/>
+              <strings jsxname="layout (--)" jsxwidth="100%" jsxheight="100%"/>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="2"/>
+                <strings jsxname="blkRepaintMethod" jsxwidth="100%" jsxheight="100%" jsxpadding="3"/>
+                <dynamics jsxborder="@Dashed Bottom"/>
+                <object type="jsx3.gui.RadioButton">
+                  <variants jsxheight="18" jsxdefaultselected="1" jsxselected="0" jsxrelativeposition="1"/>
+                  <strings jsxname="rdo1" jsxtext="Use table-based repaint (keep sorted)" jsxgroupname="incremental_repaint" jsxmargin="0 4 0 0" jsxvalue="false" jsxwidth="100%"/>
+                  <events jsxselect="com.tibco.giclient.updateIncrementalRepaint('false');"/>
+                </object>
+                <object type="jsx3.gui.RadioButton">
+                  <variants jsxheight="18" jsxdefaultselected="1" jsxselected="1" jsxrelativeposition="1"/>
+                  <strings jsxname="rdo2" jsxtext="Use row-based redraw (when possible)" jsxgroupname="incremental_repaint" jsxmargin="0 4 0 0" jsxwidth="100%" jsxvalue="true"/>
+                  <events jsxselect="com.tibco.giclient.updateIncrementalRepaint('true');"/>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="2"/>
+                <strings jsxname="blkHighlightType" jsxwidth="100%" jsxheight="100%" jsxpadding="3"/>
+                <dynamics jsxborder="@Dashed Bottom"/>
+                <object type="jsx3.gui.RadioButton">
+                  <variants jsxheight="18" jsxdefaultselected="1" jsxselected="0" jsxrelativeposition="1"/>
+                  <strings jsxname="ht1" jsxtext="No highlight" jsxgroupname="highlight_type" jsxmargin="0 4 0 0" jsxwidth="100%" jsxvalue="0"/>
+                  <events jsxselect="com.tibco.giclient.updateHighlightType(0);"/>
+                </object>
+                <object type="jsx3.gui.RadioButton">
+                  <variants jsxheight="18" jsxdefaultselected="1" jsxselected="1" jsxrelativeposition="1"/>
+                  <strings jsxname="ht2" jsxtext="Simple highlight" jsxgroupname="highlight_type" jsxmargin="0 4 0 0" jsxwidth="100%" jsxvalue="1"/>
+                  <events jsxselect="com.tibco.giclient.updateHighlightType(1);"/>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="2"/>
+                <strings jsxname="blkRefreshRate" jsxwidth="100%" jsxheight="100%" jsxtext="" jsxpadding="8"/>
+                <dynamics jsxborder="@Dashed Bottom"/>
+                <object type="jsx3.gui.Block">
+                  <variants/>
+                  <strings jsxname="blkRR" jsxwidth="100%" jsxtext="Refresh every &lt;span class='slidervalue'&gt;1&lt;/span&gt; seconds (throttle)"/>
+                </object>
+                <object type="jsx3.gui.Slider">
+                  <variants jsxvalue="25" jsxrelativeposition="1" jsxorientation="0" jsxpainttrack="1" jsxtrackclick="1"/>
+                  <strings jsxname="sldRR" jsxlength="200" jsxmargin="4 0 0 0"/>
+                  <events jsxincchange="(fpVALUE==0)?this.getPreviousSibling().setText(&quot;&lt;span class='slidervalue'&gt;Real-Time&lt;/span&gt;&quot;,true):this.getPreviousSibling().setText(&quot;Refresh every &lt;span class='slidervalue'&gt;&quot; + (fpVALUE/25) + &quot;&lt;/span&gt; seconds (throttle)&quot;,true);" jsxchange="(fpVALUE==0)?this.getPreviousSibling().setText(&quot;&lt;span class='slidervalue'&gt;Real-Time&lt;/span&gt;&quot;,true):this.getPreviousSibling().setText(&quot;Refresh every &lt;span class='slidervalue'&gt;&quot; + (fpVALUE/25) + &quot;&lt;/span&gt; seconds (throttle)&quot;,true);com.tibco.giclient.updateRefreshRate(fpVALUE);"/>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="2"/>
+                <strings jsxname="blkColumnCount" jsxwidth="100%" jsxheight="100%" jsxtext="" jsxpadding="8"/>
+                <dynamics jsxborder="@Dashed Bottom"/>
+                <object type="jsx3.gui.Block">
+                  <variants/>
+                  <strings jsxname="blkCC" jsxwidth="100%" jsxtext="Display &lt;span class='slidervalue'&gt;6&lt;/span&gt; columns"/>
+                </object>
+                <object type="jsx3.gui.Slider">
+                  <variants jsxvalue="45" jsxrelativeposition="1" jsxorientation="0" jsxpainttrack="1" jsxtrackclick="1"/>
+                  <strings jsxname="sldCC" jsxlength="200" jsxmargin="4 0 0 0"/>
+                  <events jsxincchange="this.getPreviousSibling().setText(&quot;Display &lt;span class='slidervalue'&gt;&quot; + (fpVALUE/9+1) + &quot;&lt;/span&gt; columns&quot;,true);" jsxchange="this.getPreviousSibling().setText(&quot;Display &lt;span class='slidervalue'&gt;&quot; + (fpVALUE/9+1) + &quot;&lt;/span&gt; columns&quot;,true); com.tibco.giclient.adjustColumnCount(fpVALUE/9+1);"/>
+                </object>
+              </object>
+              <object type="jsx3.gui.Block">
+                <variants jsxoverflow="2"/>
+                <strings jsxname="blkBandMan" jsxwidth="100%" jsxheight="100%" jsxtext="" jsxpadding="8"/>
+                <dynamics jsxborder="@Dashed Bottom"/>
+                <object type="jsx3.gui.Block">
+                  <variants/>
+                  <strings jsxname="blkBM" jsxwidth="100%" jsxtext="Bandwidth: &lt;span class='slidervalue'&gt;3&lt;/span&gt; kilobits per second"/>
+                </object>
+                <object type="jsx3.gui.Slider">
+                  <variants jsxvalue="55" jsxrelativeposition="1" jsxorientation="0" jsxpainttrack="1" jsxtrackclick="1"/>
+                  <strings jsxname="sldBM" jsxlength="200" jsxmargin="4 0 0 0"/>
+                  <events jsxincchange="this.getPreviousSibling().setText(&quot;Bandwidth: &lt;span class='slidervalue'&gt;&quot; + (fpVALUE > 99 ? 'unlimited' : fpVALUE/10.5+0.5) + &quot;&lt;/span&gt; kilobits per second&quot;,true);" jsxchange="this.getPreviousSibling().setText(&quot;Bandwidth: &lt;span class='slidervalue'&gt;&quot; + (fpVALUE > 99 ? 'unlimited' : fpVALUE/10.5+0.5) + &quot;&lt;/span&gt; kilobits per second&quot;,true); com.tibco.giclient.updateBandwidth(fpVALUE > 99 ? 'unlimited' : fpVALUE/10.5+0.5);"/>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="2" jsxfontsize="18"/>
+        <strings jsxname="block" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1" jsxpadding="4" jsxtext="Monitor" jsxcolor="#ffffff" jsxfontweight="bold"/>
+        <dynamics jsxbgcolor="@Solid Shadow"/>
+      </object>
+      <object type="jsx3.gui.Block">
+        <variants jsxoverflow="2"/>
+        <strings jsxname="pane" jsxwidth="100%" jsxheight="100%" jsxpadding="24 8 8 8" jsxborder="solid 10px #c8c8d5"/>
+        <dynamics jsxbgcolor="@Solid Medium"/>
+        <object type="jsx3.gui.CheckBox">
+          <variants jsxheight="18" jsxleft="10" jsxtop="5" jsxrelativeposition="0" jsxchecked="0"/>
+          <strings jsxname="chkViewHub" jsxtext="Enabled" jsxmargin="0 4 0 0" jsxdisplay=""/>
+          <events jsxexecute="jsx3.out('mycheck','the jsxexecute method was fired for checkbox, ' + this.getId());" jsxtoggle="com.tibco.giclient.enableMonitor(intCHECKED);"/>
+        </object>
+        <object type="jsx3.gui.Block">
+          <variants jsxoverflow="1" jsxfontsize="12"/>
+          <strings jsxname="blkMonitor" jsxwidth="100%" jsxheight="100%" jsxrelativeposition="1" jsxpadding="8"/>
+          <dynamics jsxbgcolor="@Solid Light" jsxborder="@Inset"/>
+        </object>
+      </object>
+    </object>
+  </object>
+</serialization>

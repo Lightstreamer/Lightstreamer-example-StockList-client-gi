@@ -170,7 +170,7 @@ function LS_onDialog(itemName, tableName) {
     i2= stringDate.lastIndexOf(':');
     return(stringDate.substring(0,i1)*3600+stringDate.substring(i1+1,i2)*60+stringDate.substring(i2+1,stringDate.length)*1);
   });
-  stockChart.setYAxis([2], function(yValue) {
+  stockChart.addYAxis([2], function(yValue) {
     var y = new String(yValue);
     if (y.indexOf(",") > -1 ) {
       var y=y.replace(",",".");

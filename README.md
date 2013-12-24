@@ -3,6 +3,7 @@
 This project contains two demos client showing integration between Lightstreamer and [TIBCO General Interface](http://developer.tibco.com/gi/default.jsp).
 
 ## Stock-List Demo - General Interface Client ##
+<!-- START DESCRIPTION Stock-List Demo -->
 
 <table>
   <tr>
@@ -24,7 +25,10 @@ The demo includes the following client-side technologies:
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 10 items, subscribed to in <b>MERGE</b> mode feeding both a [StaticGrid](http://www.lightstreamer.com/docs/client_javascript_uni_api/StaticGrid.html) and the GI widget.
 * For each pop-up window opened, a [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 1 item, subscribed to in <b>MERGE mode</b> feeding a [Chart](http://www.lightstreamer.com/docs/client_javascript_uni_api/Chart.html).
 
+<!-- END DESCRIPTION Stock-List Demo -->
+
 ## Advanced Stock-List Demo - General Interface Client ##
+<!-- START DESCRIPTION Advanced Stock-List Demo -->
 
 <table>
   <tr>
@@ -47,6 +51,8 @@ A [detailed explanation](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/J
 The demo includes the following client-side technologies:
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) for each item added to the update panel, subscribed to in <b>MERGE</b> mode.
 
+<!-- END DESCRIPTION Advanced Stock-List Demo -->
+
 ## How to edit the demos with GI Builder ##
 
 Copy the application folder (for example "GIDemo_Basic" or "GIDemo_Advanced") to the JSXAPPS folder of your GI Builder workspace.<br>
@@ -64,9 +70,12 @@ Launch the demo by downloading the index.html file from the desired Demo folder 
 # See Also #
 
 ## Lightstreamer Adapters needed by these demo clients ##
+<!-- START RELATED_ENTRIES -->
 
 * [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
 * [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
+
+<!-- END RELATED_ENTRIES -->
 
 ## Similar demo clients that may interest you ##
 

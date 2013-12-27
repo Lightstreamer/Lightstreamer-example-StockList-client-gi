@@ -1,8 +1,8 @@
-# Lightstreamer - Stock-List Demos - General Interface Clients #
+# Lightstreamer - Stock-List Demos - HTML (General Interface) Clients #
 
 This project contains two demos client showing integration between Lightstreamer and [TIBCO General Interface](http://developer.tibco.com/gi/default.jsp).
 
-## Stock-List Demo - General Interface Client ##
+## Stock-List Demo - HTML (General Interface) Client ##
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-gi-stock-list-demo---general-interface-client -->
 
 <table>
@@ -27,7 +27,7 @@ The demo includes the following client-side technologies:
 
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-gi-stock-list-demo---general-interface-client -->
 
-## Advanced Stock-List Demo - General Interface Client ##
+## Advanced Stock-List Demo - HTML (General Interface) Client ##
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---general-interface-client -->
 
 <table>

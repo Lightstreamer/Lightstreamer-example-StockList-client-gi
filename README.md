@@ -28,7 +28,7 @@ The demo includes the following client-side technologies:
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-gi-stock-list-demo---html-general-interface-client -->
 
 ## Advanced Stock-List Demo - HTML (General Interface) Client ##
-<!-- START DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---general-interface-client -->
+<!-- START DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---html-general-interface-client -->
 
 <table>
   <tr>
@@ -51,7 +51,7 @@ A [detailed explanation](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/J
 The demo includes the following client-side technologies:
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) for each item added to the update panel, subscribed to in <b>MERGE</b> mode.
 
-<!-- END DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---general-interface-client -->
+<!-- END DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---html-general-interface-client -->
 
 ## How to edit the demos with GI Builder ##
 

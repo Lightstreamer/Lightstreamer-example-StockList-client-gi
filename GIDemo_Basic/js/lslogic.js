@@ -69,7 +69,7 @@ function LS_startPush() {
   
     //create or attach a LS client
     lsClient = new LightstreamerClient(lsHost + ":" + lsPort,"DEMO");
-    lsClient.connectionSharing.enableSharing("GI_DemoCommonConnection", "ATTACH", "CREATE");
+    lsClient.connectionSharing.enableSharing("GIDemosCommonConnection", "ATTACH", "CREATE");
     
     //////////////// (OPTIONAL) Visual Status Notification
     lsClient.addListener(new StatusWidget("left", "0px", true));

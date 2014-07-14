@@ -63,7 +63,7 @@ You can get the lib from here: `\DOCS-SDKs\sdk_client_javascript\alternative_lib
 
 ## Build
 
-In order to edit the demos with GI Builder copy the application folder (for example "GIDemo_Basic" or "GIDemo_Advanced") to the JSXAPPS folder of your GI Builder workspace.<br>
+In order to edit the demos with GI Builder copy the application folder (for example `GIDemo_Basic` or `GIDemo_Advanced`) to the `JSXAPPS` folder of your GI Builder workspace.<br>
 Launch GI Builder and select the copied application folder.
 
 ## See Also

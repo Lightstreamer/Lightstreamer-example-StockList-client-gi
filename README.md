@@ -1,12 +1,17 @@
-# Lightstreamer - Stock-List Demos - HTML (General Interface) Clients #
+# Lightstreamer - Stock-List Demos - HTML (General Interface) Clients
 
 This project contains two demos client showing integration between Lightstreamer and [TIBCO General Interface](http://developer.tibco.com/gi/default.jsp).
+
 
 ## Stock-List Demo - HTML (General Interface) Client ##
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-gi-stock-list-demo---html-general-interface-client -->
 
+### Live Demo
+
 [![screenshot](screen_gibasic_large.png)](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/)<br>
-An online demonstration is hosted on our servers at [http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/)
+###[![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/)<br>
+
+### Details
 
 This application uses the <b>JavaScript Client API for Lightstreamer</b> to handle the communications with Lightstreamer Server and uses the <b>General Interface API</b> to display the real-time data.<br>
 
@@ -21,7 +26,13 @@ The demo includes the following client-side functionalities:
 ## Advanced Stock-List Demo - HTML (General Interface) Client ##
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---html-general-interface-client -->
 
+### Live Demo
+
 [![screenshot](screen_giadvanced_large.png)](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/)<br>
+###[![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/)<br>
+
+### Details
+
 An online demonstration is hosted on our servers at [http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/)
 
 This application uses the <b>JavaScript Client API for Lightstreamer</b> to handle the communications with Lightstreamer Server; uses <b>PageBus</b> as a bridge between Lightstreamer and General Interface APIs; and uses the <b>General Interface API</b> to display the real-time data.<br>
@@ -35,23 +46,29 @@ The demo includes the following client-side functionalities:
 
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---html-general-interface-client -->
 
-## How to Edit the Demos With GI Builder ##
 
-Copy the application folder (for example "GIDemo_Basic" or "GIDemo_Advanced") to the JSXAPPS folder of your GI Builder workspace.<br>
+## Install
+
+If you want to install a version of one of these demo pointing to your local Lightstreamer Server, follow these steps:
+
+* Note that, as prerequisite, the [Lightstreamer - Stock- List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
+* Launch Lightstreamer Server.
+![Folder structure](dir.png)<br>
+* To deploy the demo on a new Web Server, set up a folder structure like that shown above.
+* `ROOT` is the Web Server root folder or any subfolder under which to install the Demo. JSX contains the GI libraries. The `addins`, `prototypes`, and `settings` folders under `Workspace` don't need to contain anything special. 
+* Make sure to set the correct host name and port in the JavaScript code specific of each Demo (for example, `giclient.js` for the GIDemo_Advanced, or `lslogic.js` for the GIDemo_Basic).
+* Complete your installation of the demo with a valid version of the Lightstreamer JavaScript Client API library.
+You can get the lib from here: `\DOCS-SDKs\sdk_client_javascript\alternative_libs\` from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download) and copy the file named `lightstreamer_globals.js` into the folder `commons`.<br>
+* Launch the demo by downloading the index.html file from the desired Demo folder under JSXAPPS (for example: http://www.mycompany.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/ )
+
+## Build
+
+In order to edit the demos with GI Builder copy the application folder (for example "GIDemo_Basic" or "GIDemo_Advanced") to the JSXAPPS folder of your GI Builder workspace.<br>
 Launch GI Builder and select the copied application folder.
 
-# Deploy #
+## See Also
 
-![Folder structure](dir.png) To deploy the demo on a new Web Server, set up a folder structure like that shown above.
-[ROOT] is the Web Server root folder or any subfolder under which to install the Demo. JSX contains the GI libraries. The "addins", "prototypes", and "settings" folders under "Workspace" don't need to contain anything special. 
-Make sure to set the correct host name and port in the JavaScript code specific of each Demo (for example, "giclient.js" for the GIDemo_Advanced, or "lslogic.js" for the GIDemo_Basic).<br>
-The next step is to complete your installation of the demo with a valid version of the Lightstreamer JavaScript Client API library. 
-You can get the lib from here: "\DOCS-SDKs\sdk_client_javascript\alternative_libs\" and copy the file named lightstreamer_globals.js into the folder commons.<br>
-Launch the demo by downloading the index.html file from the desired Demo folder unser JSXAPPS (for example: http://www.mycompany.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/ )
-
-# See Also #
-
-## Lightstreamer Adapters Needed by These Demo Clients ##
+### Lightstreamer Adapters Needed by These Demo Clients
 <!-- START RELATED_ENTRIES -->
 
 * [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
@@ -59,7 +76,7 @@ Launch the demo by downloading the index.html file from the desired Demo folder 
 
 <!-- END RELATED_ENTRIES -->
 
-## Related Projects ##
+### Related Projects
 
 * [Lightstreamer - Stock-List Demos - HTML Clients](https://github.com/Weswit/Lightstreamer-example-Stocklist-client-javascript)
 * [Lightstreamer - Basic Stock-List Demo - jQuery Client](https://github.com/Weswit/Lightstreamer-example-StockList-client-jquery)
@@ -69,6 +86,6 @@ Launch the demo by downloading the index.html file from the desired Demo folder 
 * [Lightstreamer - Basic Stock-List Demo - .NET Client](https://github.com/Weswit/Lightstreamer-example-StockList-client-dotnet)
 * [Lightstreamer - Basic Stock-List Demo - Silverlight Client](https://github.com/Weswit/Lightstreamer-example-StockList-client-silverlight)
 
-# Lightstreamer Compatibility Notes #
+## Lightstreamer Compatibility Notes
 
-- Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
+* Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.

@@ -15,7 +15,7 @@ This project contains two demos client showing integration between Lightstreamer
 
 This application uses the <b>JavaScript Client API for Lightstreamer</b> to handle the communications with Lightstreamer Server and uses the <b>General Interface API</b> to display the real-time data.<br>
 
-In this application, five stock quotes are displayed in real time. The demo page contains two tables, both of which receive the real-time data flow from Lightstreamer Server. The table at the top is managed by the Lightstreamer JavaScript Client, though embedded inside GI. The table at the bottom is a GI table (in which you can drag, resize and sort columns) and is updated by the Lightstreamer Javascript Client. GI-based pop-up windows show the price charts produced by the Lightstreamer JavaScript Client.<br>
+In this application, five stock quotes are displayed in real-time. The demo page contains two tables, both of which receive the real-time data flow from Lightstreamer Server. The table at the top is managed by the Lightstreamer JavaScript Client, though embedded inside GI. The table at the bottom is a GI table (in which you can drag, resize, and sort columns) and is updated by the Lightstreamer Javascript Client. GI-based pop-up windows show the price charts produced by the Lightstreamer JavaScript Client.<br>
 
 The demo includes the following client-side functionalities:
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 10 items, subscribed to in <b>MERGE</b> mode feeding both a [StaticGrid](http://www.lightstreamer.com/docs/client_javascript_uni_api/StaticGrid.html) and the GI widget.
@@ -37,9 +37,9 @@ An online demonstration is hosted on our servers at [http://demos.lightstreamer.
 
 This application uses the <b>JavaScript Client API for Lightstreamer</b> to handle the communications with Lightstreamer Server; uses <b>PageBus</b> as a bridge between Lightstreamer and General Interface APIs; and uses the <b>General Interface API</b> to display the real-time data.<br>
 
-The Lightstreamer client receives events from Lightstreamer Server and publishes the stock updates on TIBCO PageBus. The application, created with the GI Builder, subscribes to the PageBus in order to receive and display the updates to the user.<br>
+The Lightstreamer client receives events from Lightstreamer Server and publishes the stock updates on TIBCO PageBus. The application, created with the GI Builder, subscribes to the PageBus to receive and display the updates to the user.<br>
 
-A [detailed explanation](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/GI-AMS%20Demo.pdf) of this application is available (in that document Lightstreamer is referred to as "Ajax Message Service").<br>
+A [detailed explanation](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/GI-AMS%20Demo.pdf) of this application is available (in that document, Lightstreamer is referred to as "Ajax Message Service").<br>
 
 The demo includes the following client-side functionalities:
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) for each item added to the update panel, subscribed to in <b>MERGE</b> mode.
@@ -63,7 +63,7 @@ You can get the lib from here: `\DOCS-SDKs\sdk_client_javascript\alternative_lib
 
 ## Build
 
-In order to edit the demos with GI Builder copy the application folder (for example `GIDemo_Basic` or `GIDemo_Advanced`) to the `JSXAPPS` folder of your GI Builder workspace.<br>
+To edit the demos with GI Builder, copy the application folder (for example, `GIDemo_Basic` or `GIDemo_Advanced`) to the `JSXAPPS` folder of your GI Builder workspace.<br>
 Launch GI Builder and select the copied application folder.
 
 ## See Also

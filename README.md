@@ -58,7 +58,8 @@ If you want to install a version of one of these demo pointing to your local Lig
 * `ROOT` is the Web Server root folder or any subfolder under which to install the Demo. JSX contains the GI libraries. The `addins`, `prototypes`, and `settings` folders under `Workspace` don't need to contain anything special. 
 * Make sure to set the correct host name and port in the JavaScript code specific of each Demo (for example, `giclient.js` for the GIDemo_Advanced, or `lslogic.js` for the GIDemo_Basic).
 * Complete your installation of the demo with a valid version of the Lightstreamer JavaScript Client API library.
-You can get the lib from here: `\DOCS-SDKs\sdk_client_javascript\alternative_libs\` from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download) and copy the file named `lightstreamer_globals.js` into the folder `commons`.<br>
+Build a file to be named `lightstreamer_globals.js` with the [online generator](http://www.lightstreamer.com/docs/client_javascript_tools/generator.html) and put the file into the folder `commons`.<br>
+You can include all available modules; just be sure to use the "Use globals" version.
 * Launch the demo by downloading the index.html file from the desired Demo folder under JSXAPPS (for example: http://www.mycompany.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/ )
 
 ## Build

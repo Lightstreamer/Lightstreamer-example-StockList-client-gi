@@ -9,7 +9,7 @@ This project contains two demos client showing integration between Lightstreamer
 ### Live Demo
 
 [![screenshot](screen_gibasic_large.png)](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/)<br>
-###[![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/)<br>
+### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/)<br>
 
 ### Details
 
@@ -29,7 +29,7 @@ The demo includes the following client-side functionalities:
 ### Live Demo
 
 [![screenshot](screen_giadvanced_large.png)](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/)<br>
-###[![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/)<br>
+### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/)<br>
 
 ### Details
 

@@ -45,7 +45,7 @@ jsx3.Package.definePackage("com.ams.amspublisher",function(amspublisher) {
     //////////////// (OPTIONAL) Visual Status Notification
     lsClient.addListener(new StatusWidget("right", "0px", true));
     
-    lsClient.connectionOptions.setMaxBandwidth(actualBW);
+    lsClient.connectionOptions.setRequestedMaxBandwidth(actualBW);
     
     lsClient.addListener({onServerError: function(code, mec) {
         PageBus.publish("AMS.error","Server error! Code:" + code + " -> " + mex);
@@ -142,7 +142,7 @@ jsx3.Package.definePackage("com.ams.amspublisher",function(amspublisher) {
   
     actualBW = newBW;
     if (lsClient != null) {
-      lsClient.connectionOptions.setMaxBandwidth(actualBW);
+      lsClient.connectionOptions.setRequestedMaxBandwidth(actualBW);
     } else {
       PageBus.publish("AMS.warning","LightstreamerEngine not available. New bandwidth value stored for future use.");
     }

@@ -18,8 +18,8 @@ This application uses the <b>JavaScript Client API for Lightstreamer</b> to hand
 In this application, five stock quotes are displayed in real-time. The demo page contains two tables, both of which receive the real-time data flow from Lightstreamer Server. The table at the top is managed by the Lightstreamer JavaScript Client, though embedded inside GI. The table at the bottom is a GI table (in which you can drag, resize, and sort columns) and is updated by the Lightstreamer Javascript Client. GI-based pop-up windows show the price charts produced by the Lightstreamer JavaScript Client.<br>
 
 The demo includes the following client-side functionalities:
-* A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 10 items, subscribed to in <b>MERGE</b> mode feeding both a [StaticGrid](http://www.lightstreamer.com/docs/client_javascript_uni_api/StaticGrid.html) and the GI widget.
-* For each pop-up window opened, a [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 1 item, subscribed to in <b>MERGE</b> mode feeding a [Chart](http://www.lightstreamer.com/docs/client_javascript_uni_api/Chart.html).
+* A [Subscription](https://lightstreamer.com/api/ls-web-client/latest/Subscription.html) containing 10 items, subscribed to in <b>MERGE</b> mode feeding both a [StaticGrid](https://lightstreamer.com/api/ls-web-client/latest/StaticGrid.html) and the GI widget.
+* For each pop-up window opened, a [Subscription](https://lightstreamer.com/api/ls-web-client/latest/Subscription.html) containing 1 item, subscribed to in <b>MERGE</b> mode feeding a [Chart](https://lightstreamer.com/api/ls-web-client/latest/Chart.html).
 
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-gi-stock-list-demo---html-general-interface-client -->
 
@@ -42,7 +42,7 @@ The Lightstreamer client receives events from Lightstreamer Server and publishes
 A [detailed explanation](http://demos.lightstreamer.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Advanced/GI-AMS%20Demo.pdf) of this application is available (in that document, Lightstreamer is referred to as "Ajax Message Service").<br>
 
 The demo includes the following client-side functionalities:
-* A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) for each item added to the update panel, subscribed to in <b>MERGE</b> mode.
+* A [Subscription](https://lightstreamer.com/api/ls-web-client/latest/Subscription.html) for each item added to the update panel, subscribed to in <b>MERGE</b> mode.
 
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-gi-advanced-stock-list-demo---html-general-interface-client -->
 
@@ -58,8 +58,9 @@ If you want to install a version of one of these demo pointing to your local Lig
 * `ROOT` is the Web Server root folder or any subfolder under which to install the Demo. JSX contains the GI libraries. The `addins`, `prototypes`, and `settings` folders under `Workspace` don't need to contain anything special. 
 * Make sure to set the correct host name and port in the JavaScript code specific of each Demo (for example, `giclient.js` for the GIDemo_Advanced, or `lslogic.js` for the GIDemo_Basic).
 * Complete your installation of the demo with a valid version of the Lightstreamer JavaScript Client API library.
-Build a file to be named `lightstreamer_globals.js` with the [online generator](http://www.lightstreamer.com/docs/client_javascript_tools/generator.html) and put the file into the folder `commons`.<br>
-You can include all available modules; just be sure to use the "Use globals" version.
+  Build a file to be named `lightstreamer_globals.js` with the provided generator and put the file into the folder `commons`;
+  see the build instructions on the [GitHub page](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript#building).
+  You can include all available modules; just be sure to use the "Use globals" version.
 * Launch the demo by downloading the index.html file from the desired Demo folder under JSXAPPS (for example: http://www.mycompany.com/TIBCOGIDemos/Workspace/JSXAPPS/GIDemo_Basic/ )
 
 ## Build
@@ -89,4 +90,6 @@ Launch GI Builder and select the copied application folder.
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer JavaScript Client library version 6.0 to 7.x.
+* Compatible with Lightstreamer JavaScript Client library version 8.0 or newer.
+
+* For a version of this example compatible with Lightstreamer SDK for JavaScript Clients version 7.x or earlier, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-gi/releases/tag/latest-for-client-7.x).

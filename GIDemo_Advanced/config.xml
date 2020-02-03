@@ -45,7 +45,7 @@
       <record jsxid="id" type="string">ls_js</record>
       <record jsxid="type" type="string">script</record>
       <record jsxid="load" type="number">1</record>
-      <record jsxid="src" type="string">../../../../commons/lightstreamer.js</record>
+      <record jsxid="src" type="string">../../../../commons/lightstreamer.min.js</record>
     </record>
     <record jsxid="5" type="map">
       <record jsxid="id" type="string">amspublisher_js</record>

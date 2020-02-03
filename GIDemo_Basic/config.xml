@@ -28,7 +28,7 @@ startGIDialogs();</record>
       <record jsxid="id" type="string">ls_js</record>
       <record jsxid="type" type="string">script</record>
       <record jsxid="load" type="number">1</record>
-      <record jsxid="src" type="string">../../../../commons/lightstreamer.js</record>
+      <record jsxid="src" type="string">../../../../commons/lightstreamer.min.js</record>
     </record>
     <record jsxid="2" type="map">
       <record jsxid="id" type="string">main_js</record>

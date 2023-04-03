@@ -40,7 +40,6 @@ jsx3.Package.definePackage("com.ams.amspublisher",function(amspublisher) {
     actualBW = bandwidth;
     //create or attach a LS client
     lsClient = new LightstreamerClient("http://" + lsHost + ":" + lsPort,"DEMO");
-    lsClient.connectionSharing.enableSharing("GIDemosCommonConnection", "ATTACH", "CREATE");
     
     //////////////// (OPTIONAL) Visual Status Notification
     lsClient.addListener(new StatusWidget("right", "0px", true));

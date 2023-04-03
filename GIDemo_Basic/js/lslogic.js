@@ -69,7 +69,6 @@ function LS_startPush() {
   
     //create or attach a LS client
     lsClient = new LightstreamerClient(lsHost + ":" + lsPort,"DEMO");
-    lsClient.connectionSharing.enableSharing("GIDemosCommonConnection", "ATTACH", "CREATE");
     
     //////////////// (OPTIONAL) Visual Status Notification
     lsClient.addListener(new StatusWidget("left", "0px", true));
@@ -131,7 +130,7 @@ function LS_startPush() {
     subscription.setFieldSchema("last_price time pct_change bid_quantity bid ask ask_quantity min max ref_price open_price stock_name arrow");
     subscription.setDataAdapter("QUOTE_ADAPTER");
     subscription.setRequestedSnapshot('yes');
-    subscription.setRequestedMaxFrequency(0.5);
+    subscription.setRequestedMaxFrequency("0.5");
     
     subscription.addListener( {onItemUpdate: function(updateInfo) {
               if (updateInfo.getValue(3) < 0 ) {
@@ -158,7 +157,7 @@ function LS_onDialog(itemName, tableName) {
   subsGrid.setFieldSchema("stock_name last_price time");
   subsGrid.setDataAdapter("QUOTE_ADAPTER");
   subsGrid.getRequestedSnapshot('yes');
-  subsGrid.getRequestedMaxFrequency(0.5);
+  subsGrid.getRequestedMaxFrequency("0.5");
   
   lsClient.subscribe(subsGrid);
   
